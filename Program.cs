@@ -74,7 +74,6 @@ namespace ReversePolishCalculator
                     top = stack.Pop();
                 }
 
-                //This applies to the 7th input example from the Sample Data list
                 int firstVal = 0;
                 int secondVal = 0;
                 for (int i = 0; i < 2; i++)
@@ -121,21 +120,18 @@ namespace ReversePolishCalculator
 
 
 
-                //This applies to the 8th input example, given on the Sample Data sheet
-                //and generally validating input
+                //Validating input
                 if (a < 0)
                 {
                     //At this point the first value is still in the stack
                     return "Error: Negative Token(" + a + ")";
                 }
 
-                //This applies to the 9th input example, given on the Sample Data sheet
                 else if (a == 0)
                 {
                     divByZero = true;
                 }
 
-                //This applies to the 10th input example, given on the Sample Data sheet
                 if (stack.Count == 0)
                 {
                     return "Error: Stack is empty!";
